@@ -1,0 +1,45 @@
+PHP Assignment: Dynamic Task Management System with Theme PersistenceObjective:
+Develop a Dynamic Task Management System using PHP that incorporates task management functionality, theme customization, and the use of sessions and cookies for data persistence and personalization.
+
+Requirements:
+Task Management System:
+
+Create a system where users can add, edit, and delete tasks.
+Each task should have the following properties:
+Task ID (unique, auto-generated).
+Task Name (required).
+Task Description (optional).
+Priority (High, Medium, Low).
+
+Session for Task Storage:
+
+Use PHP $_SESSION to store tasks dynamically during the session.
+The tasks should persist only while the session is active.
+Cookies for Data Persistence:
+Store the last task name added by the user in a cookie and display it on the page.
+Use cookies to remember the user's selected theme (light or dark mode) and apply the selected theme automatically upon subsequent visits.
+
+Dynamic Theme Switcher:
+
+Provide a theme switcher on the UI for light and dark themes.
+Store the user's selected theme in a cookie with an expiration time of 1 day.
+
+Dynamic UI Generation:
+
+Dynamically generate a table to display the list of tasks.
+The table should include actions for editing and deleting tasks.
+
+Form Handling:
+
+Implement a single form to handle both adding and editing tasks.
+Prepopulate the form with task data when editing.
+
+Validation and Error Handling:
+
+Validate user inputs for task name and priority using PHP inbuilt methods like filter_var.
+Provide appropriate error messages for invalid inputs.
+
+Styling:
+
+Use CSS to style the UI, and ensure the theme switcher dynamically updates the styles.
+Bonus: Use inline PHP to embed dynamic styles based on the selected theme.
